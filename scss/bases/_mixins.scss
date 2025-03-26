@@ -1,0 +1,20 @@
+@import "../bases/variables";
+
+@mixin display($display, $justify, $alignment, $direction, $gap: 8px) {
+  display: $display;
+  justify-content: $justify;
+  align-items: $alignment;
+  flex-direction: $direction;
+  gap: $gap;
+}
+
+@mixin button($padding:8px 12px ,$bg-color: $btn-color, $color: white) {
+
+  padding:$padding;
+  background-color: $bg-color;
+  color: $color;
+
+  &:hover {
+    background-color: lighten($bg-color, 20%);
+  }
+}

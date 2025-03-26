@@ -1,0 +1,43 @@
+@import "../bases/commoons";
+@import "../bases/variables";
+
+.monitoring {
+  background-color: $bg-color;
+}
+  h2 {
+    font-size: 31px;
+    color: $color;
+  }
+  .info {
+    font-weight: 200;
+  }
+  span {
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .main {
+  @extend %space-item;
+  padding: 40px;
+}
+.main-left {
+  width: 493px;
+
+  h1 {
+    color: white;
+
+    font-size: 60px;
+  }
+  h5 {
+    color: $btn-color;
+  }
+  p {
+    color: $color;
+  }
+}
+.main-right {
+  .clock {
+    padding: 20px;
+  }
+}
+  
+

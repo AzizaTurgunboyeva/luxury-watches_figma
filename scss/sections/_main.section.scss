@@ -1,0 +1,52 @@
+@import "../bases/commoons";
+@import "../bases/variables";
+
+.activities-wrap {
+  @extend %space-item;
+  padding: 138px 251px 138px 233px;
+  gap: 154px;
+  .activities-wrap__left {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 2rem;
+    p {
+      font-weight: lighter;
+      font-family: 200;
+    }
+    .card.swimming {
+      margin-top: 100px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 3;
+    }
+    .card.running {
+      grid-column: 2 / 3;
+      grid-row: 1;
+    }
+    .card.cycling {
+      grid-column: 2 / 3;
+      grid-row: 2;
+    }
+  }
+  .card-links {
+    text-decoration: none;
+    color: #000000;
+  }
+  .card-title {
+    font-size: 22px;
+    font-weight: 350;
+    line-height: 150%;
+  }
+  .activities-wrap__right {
+    width: 410px;
+    h4 {
+      font-size: 31px;
+      font-weight: bold;
+    }
+    p {
+      font-weight: lighter;
+      font-family: 200;
+    }
+  }
+}
+

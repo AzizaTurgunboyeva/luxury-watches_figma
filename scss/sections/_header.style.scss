@@ -1,0 +1,55 @@
+@import "../bases/variables";
+@import "../bases/mixins";
+@import "../bases/commoons";
+
+header {
+  background-color: $bg-color;
+
+}
+navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar {
+  @extend %space-item;
+  padding-top: 20px;
+  
+}
+.nav-links {
+  @extend %space-item;
+  gap: 40px;
+}
+
+.a-links {
+  text-decoration: none;
+  color: $color;
+}
+.btn {
+  @include button;
+  border: none;
+}
+.main {
+  @extend %space-item;
+  padding: 40px;
+}
+.main-left {
+  width: 493px;
+
+  h1 {
+    color: white;
+
+    font-size: 60px;
+  }
+  h5 {
+    color: $btn-color;
+  }
+  p {
+    color: $color;
+  }
+}
+.main-right {
+  .clock {
+    padding: 20px;
+  }
+}

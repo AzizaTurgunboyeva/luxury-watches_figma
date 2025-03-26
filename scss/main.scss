@@ -1,0 +1,22 @@
+@import './bases/variables';
+@import './sections/header.style';
+@import './sections/main.section';
+@import './sections/monitoring';
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $font;
+}
+.container {
+  width: 1131px;
+  margin: 0 auto;
+  h1{
+    color: $color;
+  }
+  .main-btn{
+    margin-top: 20px;
+  }
+  .btn a{
+    color: $color;
+  }
+}
